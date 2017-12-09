@@ -3,122 +3,226 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
   </head>
   <body>
+
     <!-- Header -->
 
     <header>
-      <img src="./resources/images/ic-logo.svg" alt="School Logo">
-      <span>COLMAR ACADEMY</span>
-      <nav>
-        <ul>
-          <li>On Campus</li>
-          <li>Online</li>
-          <li>For Companies</li>
-          <li>Sign in</li>
-        </ul>
-      </nav>
+      <!-- desktop view -->
+      <div class="desktop hcenter">
+        <div class="header-left">
+          <img src="./resources/images/ic-logo.svg" alt="School logo">
+          <span>COLMAR ACADEMY</span>
+        </div>
+        <nav>
+          <ul>
+            <li>On Campus</li>
+            <li>Online</li>
+            <li>For Companies</li>
+            <li>Sign in</li>
+          </ul>
+        </nav>
+      </div>
 
+      <!-- mobile view -->
+      <div class="mobile hcenter">
+        <ul>
+          <li><img src="./resources/images/ic-logo.svg" alt="School logo"></li>
+          <li><img src="./resources/images/ic-on-campus.svg" alt="on CAmpus"></li>
+          <li><img src="./resources/images/ic-online.svg" alt="online"></li>
+          <li><img src="./resources/images/ic-login.svg" alt="sign in"></li>
+        </ul>
+      </div>
     </header>
 
-    <!-- Banner -->
+    <div class="main-content">
 
-    <div class="banner">
-      <img src="./resources/images/banner.jpg" alt="Students at picnic table">
-      <h1>Learn something new everyday</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button type="button" name="button">Start here</button>
+      <!-- Banner -->
+
+      <div class="banner">
+        <div class="card-left">
+          <div class="image-container vcenter hcenter">
+            <img src="./resources/images/banner.jpg" alt="Students at picnic table">
+          </div>
+        </div>
+        <div class="card-right hcenter">
+          <h1>Learn something new everyday</h1>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+          <button type="button" name="button">Start here</button>
+        </div>
+      </div>
+
+      <!-- Information -->
+
+      <div class="information">
+        <div class="card-left">
+          <div class="image-container vcenter hcenter">
+            <img class="vcenter hcenter" src="./resources/images/information-main.jpg" alt="Man reading outside">
+          </div>
+          <div class="content vcenter hcenter">
+            <h2>It doesn't hurt to keep practicing</h2>
+            <p>
+              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo
+              lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat
+               ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+             </p>
+             <p id="citation">Emmanual, Sr Stratagist at Hiring.com</p>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <div class="sub-panel">
+            <div class="image-container">
+                <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Students on sunlit brick sidewalk viewed from overhead">
+                <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Students on sunlit brick sidewalk viewed from overhead">
+            </div>
+            <div class="sub-panel-right vcenter">
+              <h3>Orientation date</h3>
+              <p>Tues 10/11 & Weds 10/12: 8am-3pm</p>
+              <p><a href="#">Read More</a></p>
+            </div>
+          </div>
+
+          <div class="sub-panel">
+            <div class="image-container">
+                <img class="desktop" src="./resources/images/information-campus.jpg" alt="Library setting with hanging lamps">
+                <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Library setting with hanging lamps">
+            </div>
+            <div class="sub-panel-right vcenter">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <p><a href="#">Read More</a></p>
+            </div>
+          </div>
+
+          <div class="sub-panel">
+            <div class="image-container">
+                <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Older man with gray beard, glasses, and blue fedora">
+                <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Older man with gray beard, glasses, and blue fedora">
+            </div>
+            <div class="sub-panel-right vcenter">
+              <h3>Our guest lecture</h3>
+              <p>Join a keynote with Oliver Sack about music and medical treatment</p>
+              <p><a href="#">Read More</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Course Offerings -->
+
+      <div class="courses">
+        <h2>Start learning</h2>
+
+        <div class="course-grid">
+
+          <div class="row top">
+            <div class="course-card">
+              <div class="image-container">
+                  <img src="./resources/images/course-software.jpg" alt="Dual computer monitors in a dark room">
+              </div>
+              <div class="card-lower">
+                <h3>Software Engineering</h3>
+                <p class="sub-heading">COURSES</p>
+                <p>Web Development, Mobile Development, iOT, APIs</p>
+              </div>
+            </div>
+
+            <div class="course-card row-center">
+              <div class="image-container">
+                  <img src="./resources/images/course-computer-art.jpg" alt="Mobile phone close up with coffee shop background">
+              </div>
+              <div class="card-lower">
+                <h3>Computer Art</h3>
+                <p class="sub-heading">COURSES</p>
+                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="image-container">
+                <img src="./resources/images/course-design.jpg" alt="Close up of a person's torso standing outside with camera on neckstrap">
+              </div>
+              <div class="card-lower">
+                <h3>Design</h3>
+                <p class="sub-heading">COURSES</p>
+                <p>User Expierence Deisgn, User Research, Visual Design</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="course-card">
+              <div class="image-container">
+                  <img src="./resources/images/course-data.jpg" alt="Silver laptop on a desk with a glass top">
+              </div>
+              <div class="card-lower">
+                <h3>Data</h3>
+                <p class="sub-heading">COURSES</p>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
+            </div>
+
+            <div class="course-card row-center">
+              <div class="image-container">
+                  <img src="./resources/images/course-business.jpg" alt="Wooden chess pieces">
+              </div>
+              <div class="card-lower">
+                <h3>Business</h3>
+                <p class="sub-heading">COURSES</p>
+                <p>Product Development, Business Development, Startup</p>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="image-container">
+                  <img src="./resources/images/course-marketing.jpg" alt="Person interacting with a smart watch">
+              </div>
+              <div class="card-lower">
+                <h3>Marketing</h3>
+                <p class="sub-heading">COURSES</p>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Thesis -->
+
+      <div class="thesis section">
+        <h2>Thesis exhibit</h2>
+        <video src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg"></video>
+        <h2>Reimagine Urban</h2>
+        <p>
+          "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque.
+          Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
+           tristique ligula."
+        </p>
+
+        <img src="./resources/images/thesis-fisma.jpg" alt="Smartphone resting on a disheveled stack handwritten notes on a wooden desk">
+        <h3>Fisma: Design and Prototype</h3>
+        <p>Designer showcase of new prototype product</p>
+
+        <img src="./resources/images/thesis-now-and-then.jpg" alt="New York City skyline with focus on the Empire State Building">
+        <h3>Now and then</h3>
+        <p>Research study about New York</p>
+
+      </div>
+
     </div>
-
-    <!-- Information -->
-    <div class="information">
-
-      <img src="./resources/images/information-main.jpg" alt="Man reading outside">
-      <h2>It doesn't hurt to keep practicing</h2>
-      <p>
-        "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo
-        lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat
-         ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
-       </p>
-       <p>Emmanual, Sr Stratagist at Hiring.com</p>
-
-       <img src="./resources/images/information-orientation.jpg" alt="Students on sunlit brick sidewalk viewed from overhead">
-       <h3>Orientation Date</h3>
-       <p>Tues 10/11 & Weds 10/12: 8am-3pm</p>
-       <p><a href="#">Read More</a></p>
-
-       <img src="./resources/images/information-campus.jpg" alt="Library setting with hanging lamps">
-       <h3>Our Campus</h3>
-       <p>Find which campus is close by you</p>
-       <p><a href="#">Read More</a></p>
-
-       <img src="./resources/images/information-guest-lecture.jpg" alt="Older man with gray beard, glasses, and blue fedora">
-       <h3>Our guest lecture</h3>
-       <p>Join a keynote with Oliver Sack about music and medical treatment</p>
-       <p><a href="#">Read More</a></p>
-
-    </div>
-
-    <!-- Course Offerings -->
-    <div class="courses">
-      <h2>Start learning</h2>
-
-      <img src="./resources/images/course-software.jpg" alt="Dual computer monitors in a dark room">
-      <h4>Software Engineering</h4>
-      <p>COURSES</p>
-      <p>Web Development, Mobile Development, iOT, APIs</p>
-
-      <img src="./resources/images/course-computer-art.jpg" alt="Mobile phone close up with coffee shop background">
-      <h4>Computer Art</h4>
-      <p>COURSES</p>
-      <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-
-      <img src="./resources/images/course-design.jpg" alt="Close up of a person's torso standing outside with camera on neckstrap">
-      <h4>Design</h4>
-      <p>COURSES</p>
-      <p>User Expierence Deisgn, User Research, Visual Design</p>
-
-      <img src="./resources/images/course-data.jpg" alt="Silver laptop on a desk with a glass top">
-      <h4>Data</h4>
-      <p>COURSES</p>
-      <p>Data Science, Big Data, SQL, Data Visualization</p>
-
-      <img src="./resources/images/course-business.jpg" alt="Wooden chess pieces">
-      <h4>Business</h4>
-      <p>COURSES</p>
-      <p>Product Development, Business Development, Startup</p>
-
-      <img src="./resources/images/course-marketing.jpg" alt="Person interacting with a smart watch">
-      <h4>Marketing</h4>
-      <p>COURSES</p>
-      <p>Analytics, Content Marketing, Mobile Marketing</p>
-
-    </div>
-
-    <!-- Thesis -->
-
-    <div class="thesis">
-      <h2>Thesis exhibit</h2>
-      <video src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg"></video>
-      <h2>Reimagine Urban</h2>
-      <p>
-        "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque.
-        Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
-         tristique ligula."
-      </p>
-
-      <img src="./resources/images/thesis-fisma.jpg" alt="Smartphone resting on a disheveled stack handwritten notes on a wooden desk">
-      <h3>Fisma: Design and Prototype</h3>
-      <p>Designer showcase of new prototype product</p>
-
-      <img src="./resources/images/thesis-now-and-then.jpg" alt="New York City skyline with focus on the Empire State Building">
-      <h3>Now and then</h3>
-      <p>Research study about New York</p>
-
-    </div>
-
     <!-- Footer -->
-    <footer>
+
+    <footer class="section">
       <p>&copy 2016 Colmar Academy.  All rights reserved</p>
       <ul>
         <li>Terms</li>
