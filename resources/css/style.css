@@ -21,6 +21,7 @@ html {
   position: relative;
   top: 4rem;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .card-left {
@@ -363,6 +364,7 @@ header nav ul li {
   flex-direction: column;
   width: 100%;
   margin-bottom: 0;
+  border-bottom: solid 1px black;
 }
 
 .thesis h2 {
@@ -372,7 +374,7 @@ header nav ul li {
 
 .thesis-content {
   display: flex;
-  border-bottom: solid 1px black;
+  /*border-bottom: solid 1px black;*/
   margin: 0;
 }
 
@@ -407,12 +409,55 @@ video {
   background-color: gray;
 }
 
-/* COMPLETE MOBILE SECTION FOR THESIS & BOTH DESKTOP/MOBILE FOR THE FOOTER */
+@media only screen and (max-width: 710px) {
 
+  .thesis-content .card-right {
+    display: none;
+  }
 
+  .thesis-content .card-left h4, .thesis-content .card-left p {
+    display: none;
+  }
 
+  .thesis h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .thesis-content .card-left {
+    margin: 0;
+  }
+
+  video {
+    margin: 0;
+  }
+
+}
 
 footer {
-  position: static;
-  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 710px) {
+
+  footer {
+    justify-content: center;
+  }
+
+  footer ul {
+    display: none;
+  }
+
 }
